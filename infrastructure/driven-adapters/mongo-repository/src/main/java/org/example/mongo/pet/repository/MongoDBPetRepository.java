@@ -7,6 +7,4 @@ import reactor.core.publisher.Flux;
 
 public interface MongoDBPetRepository
         extends ReactiveMongoRepository<PetDocument, String>, ReactiveQueryByExampleExecutor<PetDocument> {
-
-    Flux<PetDocument> findByN();
 }
